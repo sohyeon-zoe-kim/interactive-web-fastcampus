@@ -22,6 +22,7 @@ button, input {
   outline: none;
   border: none;
   background: none;
+  padding: 0;
 }
 
 input, textarea, button { 
@@ -135,10 +136,14 @@ header {
   box-shadow: 0 2px 4px rgba(0,0,0,0.18);
 }
 
+section {
+  position: relative;
+}
+
 .category-bar {
   display: flex;
   margin: 0 40px;
-  gap: 32px;
+  gap: 25px;
   overflow: auto;
 }
 
@@ -191,4 +196,30 @@ header {
 
 #active-category-button .inactive-img {
   display: none;
+}
+
+.category-right-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-right: 40px;
+  width: 76px;
+  z-index: 1;
+  background-image: linear-gradient(to right,rgb(255 255 255/0),white 40px);
+  cursor: pointer;
+}
+
+.category-right-button button {
+  background-color: #fff;
+  border: 0.5px solid rgb(0 0 0/0.3);
+  border-radius: 50%;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
