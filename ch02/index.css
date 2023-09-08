@@ -134,6 +134,7 @@ body {
 
 #number-0 {
   animation: apperFromBottom 2s;
+  animation-timing-function: cubic-bezier(.98,1.55,.71,-0.29);
 }
 
 #alien_hand-R, #alien_hand-L {
